@@ -12,4 +12,4 @@ $BODY = "This machine's IP is $IP, user is $USER, Hostname is $NAME, PowerShell 
 
 Write-Host($BODY)
 
-##Send-MailMessage -To "botheaj@ucmail.uc.edu" -From "guydavidngondo@gmail.com" -Subject "IT3038C Windows SysInfo" -Body $BODY -SmtpServer smtp.gmail.com -port 587 -UseSSL -Credential (Get-Credential)
+Send-MailMessage -To "botheaj@ucmail.uc.edu" -From "guydavidngondo@gmail.com" -Subject "IT3038C Windows SysInfo" -Body $BODY -SmtpServer smtp.gmail.com -port 587 -UseSSL -Credential (Get-Credential)
