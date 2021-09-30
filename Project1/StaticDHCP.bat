@@ -1,5 +1,5 @@
 @echo off 
-echo ==This Scripts will configure static or DHCP addreses on the Ethernet port==
+echo ==This Scripts will configure the Ethernet port with static or DHCP addresses==
 echo Choose: 
 echo [1] Set Static IP 
 echo [2] Set DHCP 
