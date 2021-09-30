@@ -33,14 +33,14 @@ Completed
 Press any key to continue . . .
 
 ```
-In this example we selected 1 to set static IP on the Ethernet port once completed the script will prompt you to press any key to exit.
+In this example we selected 1 to set static IP on the Ethernet port, once completed the script will prompt you to press any key to exit.
 
 You can verify the result on your Ethernet port: Control Panel\Network and Internet\Network Connections
 
 ![](/Project1/2021-09-30-12-41-10.png)
 ![](/Project1/2021-09-30-12-27-49.png)
 
-If there is a duplicate IP or you run option 1 again, you will get this out put:
+If there is a duplicate IP or if you run option 1 again, you will get this out put:
 ```bash
 [1,2]? 1
 "Setting static IPs on the Ethernet port..."
@@ -52,6 +52,7 @@ The object is already in the list.
 Completed
 Press any key to continue . . .
 ```
+"The object is already in the list." Tells you that the static IPs you trying to add is/are already set on the NIC card.
 
 Now, let switch the Ethernet port back to DHCP. Run the script as administrator and type 2 when prompted.
 ```bash
@@ -72,10 +73,12 @@ Completed
 Press any key to continue . . .
 
 ```
-Type any to exit the script. You can verify the result on your Ethernet port: Control Panel\Network and Internet\Network Connections
+Type any key to exit the script. You can verify the result on your Ethernet port: Control Panel\Network and Internet\Network Connections
 ![](/Project1/2021-09-30-12-43-41.png)
 
-If you run it again with option 2 you will get this output:
+If you run it again with option 2 you will get "DHCP is already enabled on this interface". 
+
+Example output:
 
 ```bash
 ==This Scripts will configure static or DHCP addreses on the Ethernet port==
