@@ -15,9 +15,10 @@ echo "Setting static IPs on the Ethernet port..."
 netsh interface ip set address "Ethernet" static 192.168.0.51
 netsh in ip add address "Ethernet" 192.168.1.100 255.255.255.0
 netsh in ip add address "Ethernet" 192.168.15.10 255.255.255.0
+netsh in ip add address "Ethernet" 192.168.2.51 255.255.255.0
+netsh in ip add address "Ethernet" 192.168.88.51 255.255.255.0
 
-netsh interface ipv4 add dnsserver "Ethernet" address=8.8.8.8 index=1
-netsh interface ipv4 add dnsserver "Ethernet" address=4.2.2.2 index=2
+
 
 echo Completed
 pause 
