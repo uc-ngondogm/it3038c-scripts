@@ -1,9 +1,18 @@
 # Project 1
 
-This batch script will populate a preloaded set of static IPs on the Ethernet NIC card or switch it to DHCP
+This batch script will either assign a set of static IP addresses to the Ethernet NIC card or enable DHCP.
+
+The concept is that I have routers and switches that use GUIs for configuration, and every time I need to configure one of them, I have to set the IP on my NIC card. In only two clicks, this script will automate the process.
+
+These are IPs use for this script: 
+192.168.0.51 255.255.255.0
+192.168.1.100 255.255.255.0
+192.168.15.10 255.255.255.0
+192.168.2.51 255.255.255.0
+192.168.88.51 255.255.255.0
 
 
-Now, from the it3038c-scripts directory, run the program using Batch (you can only run this script as an administrator)
+From the batch file directory, run the program using Batch (you can only run this script as an administrator)
 
 ```bash
 PS C:\it3038c-scripts\Project1> powershell -command "Start-Process staticdhcp.bat -Verb runas" 
@@ -26,7 +35,12 @@ Press any key to continue . . .
 ```
 In this example we selected 1 to set static IP on the Ethernet port once completed the script will prompt you to press any key to exit.
 
-If there is a duplicate IP or run option 1 again, you will get this out put:
+You can verify the result on your Ethernet port: Control Panel\Network and Internet\Network Connections
+
+![](/Project1/2021-09-30-12-41-10.png)
+![](/Project1/2021-09-30-12-27-49.png)
+
+If there is a duplicate IP or you run option 1 again, you will get this out put:
 ```bash
 [1,2]? 1
 "Setting static IPs on the Ethernet port..."
@@ -38,8 +52,13 @@ The object is already in the list.
 Completed
 Press any key to continue . . .
 ```
-Now let switch the Ethernet port back to DHCP by entering 2 when prompted.
+
+Now, let switch the Ethernet port back to DHCP. Run the script as administrator and type 2 when prompted.
+```bash
+PS C:\it3038c-scripts\Project1> powershell -command "Start-Process staticdhcp.bat -Verb runas" 
+```
 Example output: 
+
 ```bash
 ==This Scripts will configure static or DHCP addreses on the Ethernet port==
 Choose:
@@ -53,7 +72,11 @@ Completed
 Press any key to continue . . .
 
 ```
-If you run it again:
+Type any to exit the script. You can verify the result on your Ethernet port: Control Panel\Network and Internet\Network Connections
+![](/Project1/2021-09-30-12-43-41.png)
+
+If you run it again with option 2 you will get this output:
+
 ```bash
 ==This Scripts will configure static or DHCP addreses on the Ethernet port==
 Choose:
@@ -68,5 +91,4 @@ Completed
 Press any key to continue . . .
 ```
 
-![](/Project1/2021-09-30-12-41-10.png)
-![](/Project1/2021-09-30-12-27-49.png)
+
