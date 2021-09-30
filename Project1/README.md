@@ -2,14 +2,14 @@
 
 ## This batch script will either assign a set of static IP addresses to the Ethernet NIC card or enable DHCP.
 
-The concept is that I have routers and switches that use GUIs for configuration, and every time I need to configure one of them, I have to set the IP on my NIC card. In only two clicks, this script will automate the process.
+The concept is that I have routers and switches that use GUIs for configuration, and every time I need to configure one of them, I have to set the appropriate IP on my NIC card. In only two clicks, this script will automate that process.
 
 These are IPs use for this script: 
-192.168.0.51 255.255.255.0
-192.168.1.100 255.255.255.0
-192.168.15.10 255.255.255.0
-192.168.2.51 255.255.255.0
-192.168.88.51 255.255.255.0
+- 192.168.0.51 255.255.255.0
+- 192.168.1.100 255.255.255.0
+- 192.168.15.10 255.255.255.0
+- 192.168.2.51 255.255.255.0
+- 192.168.88.51 255.255.255.0
 
 
 From the batch file directory, run the program using Batch (you can only run this script as an administrator)
