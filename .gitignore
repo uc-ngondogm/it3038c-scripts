@@ -3,3 +3,4 @@ output.log
 *.txt 
 *.pdf
 .pycache 
+*node_modules*
