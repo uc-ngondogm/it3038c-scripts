@@ -12,7 +12,7 @@ These are IPs use for this script:
 - 192.168.88.51 255.255.255.0
 
 
-From the batch file directory, run the program using Batch (you can only run this script as an administrator)
+From the batch file directory, run the program as administrator (you can only run and execute this script as an administrator).
 
 ```bash
 PS C:\it3038c-scripts\Project1> powershell -command "Start-Process staticdhcp.bat -Verb runas" 
