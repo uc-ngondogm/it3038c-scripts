@@ -17,6 +17,9 @@ From the batch file directory, run the program as administrator (you can only ru
 ```bash
 PS C:\it3038c-scripts\Project1> powershell -command "Start-Process staticdhcp.bat -Verb runas" 
 ```
+A new cmd administrator window will be opened when you run the command above. Click yes to open.
+![](2021-10-06-19-47-19.png)
+
 The script will prompt you to select 1 for static or 2 for DHCP.
 Example Output: 
 ```bash
