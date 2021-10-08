@@ -7,8 +7,10 @@ var ip = require('ip');
    //serverTime = os.uptime();
    //return serverTime
 //}
- var cpuCount = os.cpus().length
+// Get the number of CPUs
+var cpuCount = os.cpus().length
 
+// Get the server uptime
 serverTime = os.uptime();
 var ut_min = serverTime/60;
 var ut_hour = ut_min/60;
