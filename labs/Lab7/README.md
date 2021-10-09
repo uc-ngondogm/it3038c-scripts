@@ -5,7 +5,9 @@ The PSExcel module provides a simple tool for dealing with Excel and does not re
 PSExcel module can be used to accomplish the following tasks:
 
 •	Export random PowerShell output to Excel spreadsheets
+
 •	Import Excel spreadsheets to PowerShell as objects
+
 •	Format excel spreadsheets
 
 ## Useful Commands
