@@ -61,6 +61,7 @@ To import the file, go back to the PS terminal and run this command:
 
 ### Format excel spreadsheets
 Let’s do some formatting. In this example we are going to format the header with a bold font and a size 15.
+
 First, open the file:
 ```bash
 $Excel = New-Excel -Path C:\RandoData\Rando.xlsx
@@ -76,6 +77,7 @@ Finally, save the changes
 $Excel = $Excel | Save-Excel -Passthru
 ```
 Re-open the file to verify the changes.
+
 ![](2021-10-09-11-47-25.png)
 
 
