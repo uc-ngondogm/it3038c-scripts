@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-# Make a request
+
 page = requests.get(
     "https://webscraper.io/test-sites/e-commerce/allinone")
 soup = BeautifulSoup(page.content, 'html.parser')
