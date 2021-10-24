@@ -21,6 +21,7 @@ A new cmd administrator window will be opened when you run the command above. Cl
 ![](2021-10-24-12-13-26.png)
 
 The script will prompt you to select 1 for static & DNS or 2 for DHCP.
+
 Example Output:
 
 ![](2021-10-24-11-46-54.png)
