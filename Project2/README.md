@@ -17,7 +17,8 @@ From the batch file directory, run the program as administrator (you can only ru
 PS C:\it3038c-scripts\Project1> powershell -command "Start-Process staticDNS_dhcp.bat -Verb runas" 
 ```
 A new cmd administrator window will be opened when you run the command above. Click yes to open.
-![](2021-10-24-11-17-08.png)
+
+![](2021-10-24-12-13-26.png)
 
 The script will prompt you to select 1 for static & DNS or 2 for DHCP.
 Example Output:
