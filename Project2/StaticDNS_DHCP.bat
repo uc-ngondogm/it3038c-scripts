@@ -1,7 +1,7 @@
 @echo off 
-echo ==This Scripts will configure the Ethernet port with static & DNS or DHCP addresses==
+echo ==This Scripts will configure the Ethernet port with static and DNS IPs or DHCP addresses==
 echo Choose: 
-echo [1] Set Static and DNS IP 
+echo [1] Set Static and DNS IPs 
 echo [2] Set DHCP 
 echo. 
 :choice 
