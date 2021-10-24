@@ -6,16 +6,16 @@ page = requests.get(
 soup = BeautifulSoup(page.content, 'html.parser')
 
 # Create items as empty list
-items = []
-# Extract and store in items 
+items = [] 
+# Extract and store title and review in itmes. 
 products = soup.select('div.thumbnail')
 for elem in products:
     title = elem.select('h4 > a.title')[0].text
     review = elem.select('div.ratings')[0].text
     
     info = {
-        "Item title": title.strip(),
-        "Item review": review.strip()
+        "Item Name": title.strip(),
+        "Review": review.strip()
        
     }
     items.append(info)
