@@ -4,7 +4,7 @@
 
 The concept is that I have routers and switches that use GUIs for configuration, and every time I need to configure one of them, I have to set the appropriate IP on my NIC card. In only two clicks, this script will automate that process.
 
-These are IPs use for this script: 
+These are IPs used for this script: 
 - 192.168.0.51 255.255.255.0
 - 192.168.1.100 255.255.255.0
 - 192.168.15.10 255.255.255.0

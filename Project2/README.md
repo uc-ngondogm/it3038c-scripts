@@ -4,7 +4,7 @@
 
 This script will automatically setup the Ethernet NIC with three static IP addresses, including the primary and backup DNS IP addresses.
 
-These are IPs use for this script: 
+These are IPs used for this script: 
 - 192.168.0.51 255.255.255.0
 - 192.168.1.100 255.255.255.0
 - 192.168.15.10 255.255.255.0
