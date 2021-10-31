@@ -20,4 +20,4 @@ for elem in products:
     }
     items.append(info)
 
-print(items)
+print("1.",items[0],"\n2.",items[1])
