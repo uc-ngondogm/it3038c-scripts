@@ -1,3 +1,4 @@
+```bash
 hostname ihg-<<Site>>
 !
 !
@@ -68,4 +69,4 @@ line vty 0 15
  transport input ssh
 !
 wr
-
+```
