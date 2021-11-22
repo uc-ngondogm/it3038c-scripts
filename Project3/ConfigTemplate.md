@@ -28,7 +28,7 @@ ip dhcp pool LAN2Range
 !
 !
 interface GigabitEthernet0/0/0
- description WAN (<<AccountNumber>>) BW_(<<BandWidth>> MB)
+ description WAN 
  ip address <<Wan1PublicIp>> <<Wan1PublicSubnet>> 
  no cdp enable
  no shut

@@ -1,8 +1,9 @@
 # Project 3
 
-## This Powershell script will generate a cisco router configuration using a template and export the configiguration file to a directory.
+## This Powershell script will generate a cisco router configuration using a template and export the configuration file to a directory.
+
 We need a template file that the script will use to pull configuration template from and insert the user input to create a configuration file for the router.
-in your C:\ drive, create a new folder(dir) called  Configs, in config create a new text called Config_Template.txt. Open -[Config_Template](/Project3/ConfigTemplate.md) Copy and save the output in Config_Template.txt in C:\Configs.
+in your C:\ drive, create a new folder(dir) called  Configs, in Configs create a new text file called Config_Template.txt. Open -[Config_Template](/Project3/ConfigTemplate.md) Copy and save the output in Config_Template.txt in C:\Configs.
 
 
 

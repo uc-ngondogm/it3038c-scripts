@@ -184,8 +184,6 @@ $Gold = $Gold -replace [Regex]::Escape("<<Site>>"), $HostName
 $Gold = $Gold -replace [Regex]::Escape("<<Lan1Ip>>"), $LANIP
 $Gold = $Gold -replace [Regex]::Escape("<<Lan1SubnetMask>>"), $LANSubnet
 $Gold = $Gold -replace [Regex]::Escape("<<Lan1Gateway>>"), $LANIPplus1
-$Gold = $Gold -replace [Regex]::Escape("<<AccountNumber>>"), $ACCT
-$Gold = $Gold -replace [Regex]::Escape("<<BandWidth>>"), $bandwidth
 $Gold = $Gold -replace [Regex]::Escape("<<Wan1PublicIp>>"), $WANUsableIP
 $Gold = $Gold -replace [Regex]::Escape("<<Wan1PublicSubnet>>"), $WANSubnet
 $Gold = $Gold -replace [Regex]::Escape("<<Lan1IpPlus1>>"), $LANIPplus1
@@ -203,4 +201,4 @@ $Gold = $Gold -replace [Regex]::Escape("<<LAN2-NET-WCM>>"), $Lan2WildcardMask
 
 
 $Gold | Out-File -FilePath $pathOut
-"" | Out-File -FilePath  ("C:\Configs\Router-$HostName.txt")
+"This is a log file for config errors" | Out-File -FilePath  ("C:\Configs\Log-$HostName.txt")
