@@ -2,7 +2,7 @@
 
 ## This Powershell script will generate a cisco router configuration using a template and export the configiguration file to a directory 
 
--[Project3](/Config_Template(4300&4400 Cisco Routers).txt)
+-[Project3](/ConfigTemplates.md)
 
 This script will automatically setup the Ethernet NIC with three static IP addresses, including the primary and backup DNS IP addresses.
 
