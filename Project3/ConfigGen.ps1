@@ -146,31 +146,25 @@ if ($LanIPnum -eq 2){
 
 }
 
-
-
-Write-Host "enter Bandwidth (50)"
-$bandwidth = Read-Host
-
-
 Write-Host ("Hit Enter to create Router#$HostName.txt")
 $go = Read-Host
 
 
 if ($LanIPnum -eq 1 -and ($router_model -eq "4300" -or $router_model -eq "4400"))
 {
-    Write-Host "Config_Template(4300&4400 Cisco Routers).txt"
-   $Gold = Get-Content "C:\Configs\Config_Template(4300&4400 Cisco Routers).txt"
+    Write-Host "Completed! Router#$HostName.txt can be found in C:\Configs"
+   $Gold = Get-Content "C:\Configs\Config_Template.txt"
 }
 
 
 if ($LanIPnum -eq 2 -and ($router_model -eq "4300" -or $router_model -eq "4400"))
 {
-    Write-Host "Config_Template(4300&4400 Cisco Routers).txt"
-    $Gold = Get-Content "C:\Configs\Config_Template(4300&4400 Cisco Routers).txt"
+    Write-Host "Completed! Router#$HostName.txt can be found in C:\Configs"
+    $Gold = Get-Content "C:\Configs\Config_Template.txt"
 }
 
 $pathOut = "C:\Configs\Router#$HostName.txt"
-#"C:\Scripting\Router#" + $HostName + ".txt"
+#"C:\Configs\Router#" + $HostName + ".txt"
 
 
 
