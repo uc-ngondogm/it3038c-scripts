@@ -3,9 +3,9 @@
 ## This Powershell script will generate a cisco router configuration file using a template and export that configuration file to a directory.
 
 First we need a configuration template file that the script will use to pull configuration from and insert the user input to create a configuration file for the router.
-in your C:\ drive, create a new folder(dir) called  Configs, in Configs folder create a new text file called Config_Template.txt. Click here [Config_Template](/Project3/ConfigTemplate.md) to open the template file then Copy and save the output in Config_Template.txt file you created in C:\Configs. 
+In your C:\ drive, create a new folder(dir) called  Configs, in Configs folder create a new text file called Config_Template.txt. Click here [Config_Template](/Project3/ConfigTemplate.md) to open the template file then Copy and save the output in Config_Template.txt file you created in C:\Configs. 
 
-From the ConfigGen.ps1 file directory,type one of these commands to run the script:
+From the ConfigGen.ps1 file directory, type one of these commands to run the script:
 ```bash
 PS C:\it3038c-scripts\Project3> powershell .\ConfigGen.ps1 
 ```
@@ -13,7 +13,7 @@ or
 ```bash
 PS C:\it3038c-scripts\Project3>.\ConfigGen.ps1 
 ```
-The script will prompt you to input a set of data, Hit enter after each entry to validate your input.
+The script will prompt you to input a set of data. Hit enter after each entry to validate your input.
 These will include: Router model, hostaname, WAN IPs, LAN IP and Subnet mask.
 
 Example output:
@@ -40,12 +40,13 @@ valid subnet mask
 Hit Enter to create Router#POTUS.txt
 ```
 After entering all the info the script will prompt you to hit enter to create the configuration file named with the hostname you provided.
-If everything was correctly entered will get the bellow message showing you where to locate the configuration file generated.
+If everything was correctly entered you will get the bellow message showing you where to locate the configuration file generated.
 ```bash
 Completed! Router#POTUS.txt can be found in C:\Configs
 PS C:\it3038c-scripts\Project3>
 ```
-You can open C:\Configs to verify that the config file is in there and that it(Router#POTUS.txt) has all the info you entered
+You can open C:\Configs to verify that the config file is in there and that it(Router#POTUS.txt) has all the info you entered.
+
 Example output:
 ![](2021-11-27-12-34-05.png)
 
