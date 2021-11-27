@@ -1,5 +1,5 @@
 ```bash
-hostname ihg-<<Site>>
+hostname <<Site>>
 !
 !
 username installer privilege 15 secret P@ssw0rd!

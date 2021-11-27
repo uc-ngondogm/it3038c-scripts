@@ -51,7 +51,7 @@ Example output:
 ![](2021-11-27-12-34-05.png)
 
 ```bash
-hostname ihg-POTUS
+hostname POTUS
 !
 !
 username installer privilege 15 secret P@ssw0rd!
